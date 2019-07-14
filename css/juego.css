@@ -31,6 +31,7 @@ li::before {
 }
 .col-40 {
   background: #FFF;
+  width:200px;
   padding: 30px;
   color: #000;
 }
@@ -51,6 +52,25 @@ li::before {
   font-size: 60px;
 }
 
+#titulo{
+background-color: aqua;
+}
+#instrucciones{
+background-color: aqua;
+}
+#objetivo{
+background-color: bisque;
+}
+#ultimo-mov{
+  background-color: aqua;
+}
+#footer {
+  background-color: #EC6778;
+  text-align: center;
+  width: 860px;
+  height: 80px;
+}
+
 .texto-centrado {
   text-align: center;
 }
@@ -59,6 +79,7 @@ li::before {
   text-align: center;
   animation: fadein 2s;
 }
+
 
 @keyframes fadein {
   from { opacity: 0; }
