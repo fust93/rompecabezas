@@ -6,13 +6,19 @@ body {
   min-height: 100%;
   background-image: url(../images/adventure.jpg);
 }
+
+@font-face {
+  font-family: adventuretime;
+  src: url(av.ttf);
+}
+
 ul {
   padding-left: 0;
   list-style: none;
 }
 li {
   padding: 5px 0;
-  animation: fadein 5s;
+  animation: fadein 3s;
 }
 li::before {
   content: "• ";
@@ -21,7 +27,6 @@ li::before {
 
 .col-40 h1 {
   font-size: 20px;
-  color: #E84A5F;
 }
 
 .col-40, .col-60 {
@@ -30,8 +35,9 @@ li::before {
   vertical-align: top;
 }
 .col-40 {
-  background: #FFF;
-  width:200px;
+  background: rgb(64, 169, 200);
+  width:225px;
+  height:540px;
   padding: 30px;
   color: #000;
 }
@@ -48,33 +54,43 @@ li::before {
   float:left;
 }
 
+#objetivoimg{
+  height:150px;
+  width:150px;
+  clear: both;
+}
+
 #flecha{
   font-size: 60px;
 }
 
 #titulo{
+  color: #000;
+  font-family: adventuretime;
+font-size: 20px;
+border-style: ridge;
+ text-align: center;
 background-color: aqua;
 }
+
 #instrucciones{
-background-color: aqua;
+  border-top: 5px;
 }
 #objetivo{
-background-color: bisque;
+
 }
 #ultimo-mov{
-  background-color: aqua;
+  float: left;
 }
 #footer {
-  background-color: #EC6778;
-  text-align: center;
-  width: 860px;
-  height: 80px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 885px;
+  height: 50px;
 }
-
-.texto-centrado {
-  text-align: center;
-}
-
 #juego div {
   text-align: center;
   animation: fadein 2s;
