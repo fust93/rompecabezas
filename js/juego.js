@@ -1,5 +1,6 @@
+//version 6 de Octubre
 // Arreglo que contiene las intrucciones del juego 
-var instrucciones = [];
+var instrucciones = ["esta es una instruccion","esta es otra","y esta"];
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
@@ -21,20 +22,52 @@ Cada elemento de este arreglo deberá ser mostrado en la lista con id 'lista-ins
 Para eso deberás usar la función ya implementada mostrarInstruccionEnLista().
 Podés ver su implementación en la ultima parte de este codigo. */
 function mostrarInstrucciones(instrucciones) {
+  for(var i= 0;i<instrucciones.length;i++){
+    mostrarInstruccionEnLista(instrucciones[i],"lista-instrucciones");
+  }
     //COMPLETAR
 }
 
 /* COMPLETAR: Crear función que agregue la última dirección al arreglo de movimientos
 y utilice actualizarUltimoMovimiento para mostrarlo en pantalla */
 
+function agregarUltimaDireccion(direccion){
+movimientos.push(direccion);
+var ultimov =movimientos.pop();
+movimientos.push(direccion);
+actualizarUltimoMovimiento(ultimov);
+}
+
+
 /* Esta función va a chequear si el Rompecabezas esta en la posicion ganadora. 
 Existen diferentes formas de hacer este chequeo a partir de la grilla. */
 function chequearSiGano() {
+  var grillaganadora = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+for(var i =0;i<grilla.length;i++){
+  for(var j =0;j<grilla[i].length;j++){
+    if(grilla[i][j]===grillaganadora[i][j]){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+
+  
+}
     //COMPLETAR
+    mostrarCartelGanador();
 }
 
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
+  if(chequearSiGano=true){
+    alert("Partida ganada")
+  }
     //COMPLETAR
 }
 
@@ -49,6 +82,9 @@ En vez de intercambiar esos valores vamos a terminar teniendo en ambas posicione
 Se te ocurre cómo solucionar esto con una variable temporal?
 */
 function intercambiarPosicionesGrilla(filaPos1, columnaPos1, filaPos2, columnaPos2) {
+  var guardarposicion = grilla[filaPos1][columnaPos1];
+  grilla[filaPos1][columnaPos1]= grilla[filaPos2][columnaPos2];
+  grilla[filaPos2][columnaPos2]= guardarposicion;
     //COMPLETAR
 }
 
@@ -60,6 +96,13 @@ function actualizarPosicionVacia(nuevaFila, nuevaColumna) {
 
 // Para chequear si la posicón está dentro de la grilla.
 function posicionValida(fila, columna) {
+  if(fila>=0 && fila<=2 && columna>=0 && columna<=2){
+    return true;
+  }else{
+    return false;
+  }
+
+  
     //COMPLETAR
 }
 

@@ -19,6 +19,9 @@ ul {
 li {
   padding: 5px 0;
   animation: fadein 3s;
+  font-family: 'PT Serif', serif;
+  color: black;
+  font-size-adjust: inherit;
 }
 li::before {
   content: "• ";
@@ -63,14 +66,19 @@ li::before {
 #flecha{
   font-size: 60px;
 }
+h2{
+  font-size: 20px;
+  color: rgb(209, 40, 62);
+  font-family: 'Cinzel Decorative', cursive;
+}
 
 #titulo{
-  color: #000;
+  color: rgb(39, 39, 39);
   font-family: adventuretime;
 font-size: 20px;
 border-style: ridge;
  text-align: center;
-background-color: aqua;
+background-color: rgb(4, 197, 197);
 }
 
 #instrucciones{
