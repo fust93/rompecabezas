@@ -1,4 +1,4 @@
-//version 6 de Octubre
+//version 6 de Octubre de 2019
 // Arreglo que contiene las intrucciones del juego 
 var instrucciones = ["esta es una instruccion","esta es otra","y esta"];
 // Arreglo para ir guardando los movimientos que se vayan realizando
