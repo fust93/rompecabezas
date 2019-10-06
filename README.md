@@ -1,5 +1,5 @@
 # rompecabezas
-acamica prueba de rompecabezas
+acamica prueba de rompecabezas<br>
 Para agregar al git, git add nombredelarchivo.html<br>
 Para ver el estado  del git, git status<br>
 Para nuevos cambios git commit -m "nombre de la nueva version"<br>
